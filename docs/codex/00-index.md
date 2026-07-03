@@ -5,7 +5,7 @@ well enough to design and implement a similar system from scratch.
 
 ## Artifact Boundary
 
-All artifacts for this study live under `docs/learnings/`. The study reads the
+All artifacts for this study live under `docs/codex/`. The study reads the
 codebase, but it must not create, edit, or delete code or documentation outside
 this directory.
 

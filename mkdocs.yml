@@ -1,0 +1,150 @@
+site_name: DataX Design
+site_description: Design artifacts, architecture decisions, and system diagrams for DataX.
+site_url: https://mbellary.github.io/datax-design/
+repo_url: https://github.com/mbellary/datax-design
+repo_name: mbellary/datax-design
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.select
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mbellary/datax-design
+      name: DataX Design on GitHub
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Codex Design Study:
+      - Overview: codex/00-index.md
+      - Repository Orientation: codex/01-repository-orientation.md
+      - Runtime and Processes: codex/02-runtime-processes-and-task-topology.md
+      - API and Request Routing: codex/03-api-and-request-routing.md
+      - Product Surface Inventory: codex/04-product-surface-inventory.md
+      - Crate Responsibility Map: codex/05-crate-responsibility-map.md
+      - Primary Use Cases: codex/06-primary-use-cases.md
+      - Core Data Models: codex/07-core-data-models.md
+      - API and Protocol Catalog: codex/08-api-and-protocol-catalog.md
+      - End-to-End Request Flows: codex/09-end-to-end-request-flows.md
+      - Routing and Handler Mechanics: codex/10-routing-and-handler-mechanics.md
+      - Storage and Update Paths: codex/11-storage-and-update-paths.md
+      - System Design Synthesis: codex/12-system-design-synthesis.md
+      - Design Patterns: codex/13-design-patterns.md
+      - Build From Scratch Blueprint: codex/14-build-from-scratch-blueprint.md
+      - Final Learning Guide: codex/15-final-learning-guide.md
+      - Execution Plan: codex/architecture-study-execution-plan.md
+      - Progress Tracker: codex/progress-tracker.md
+  - DataX Design:
+      - Overview: datax/index.md
+      - System Context: datax/system-context.md
+      - Architecture:
+          - Container Architecture: datax/architecture/container-architecture.md
+          - Core Components: datax/architecture/core-components.md
+          - APIs and Contracts: datax/architecture/apis-and-contracts.md
+          - Storage and State: datax/architecture/storage-and-state.md
+      - Flows:
+          - Core Workflows: datax/flows/core-workflows.md
+          - Data Flows: datax/flows/data-flows.md
+      - Diagrams:
+          - Diagram Catalog: datax/diagrams/index.md
+      - Operations:
+          - Operational Model: datax/operations/operational-model.md
+          - Security and Governance: datax/operations/security-and-governance.md
+      - Decisions:
+          - ADR Index: datax/decisions/index.md
+          - ADR 0001: datax/decisions/adr-0001-record-architecture-decisions.md
+  - Templates:
+      - Overview: artifact-templates/index.md
+      - Architecture Overview: artifact-templates/architecture-overview.md
+      - Sequence Diagram: artifact-templates/sequence-diagram.md
+      - Flow Chart: artifact-templates/flow-chart.md
+      - Container Diagram: artifact-templates/container-diagram.md
+      - API Contract: artifact-templates/api-contract.md
+      - Data Model: artifact-templates/data-model.md
+      - ADR: artifact-templates/adr.md

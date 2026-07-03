@@ -1,0 +1,10 @@
+[project]
+name = "datax-design"
+version = "0.1.0"
+description = "Design documentation portal for DataX architecture artifacts."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material>=9.5.0",
+    "mkdocs-minify-plugin>=0.8.0",
+]
