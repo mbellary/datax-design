@@ -9,11 +9,11 @@ decisions.
 
 <div class="grid cards" markdown>
 
-### System Context
+### Platform
 
 Define the product boundary, users, external systems, and integration points.
 
-[Open system context](system-context.md)
+[Open platform](platform.md)
 
 ### Architecture
 
@@ -57,6 +57,6 @@ Record architectural choices with context, consequences, and alternatives.
 
 ## Starting Point
 
-Begin with [System Context](system-context.md), then create the first
+Begin with [Platform](platform.md), then create the first
 [Container Architecture](architecture/container-architecture.md). Once those
 are clear, add workflows and ADRs for decisions that shape implementation.

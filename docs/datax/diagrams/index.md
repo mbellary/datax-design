@@ -8,7 +8,7 @@ system reference.
 
 | Diagram | Type | Source Document | Status |
 |---|---|---|---|
-| System Context | Flow chart | [System Context](../system-context.md) | Draft |
+| Platform | Flow chart | [Platform](../platform.md) | Draft |
 | Container Architecture | Container diagram | [Container Architecture](../architecture/container-architecture.md) | Draft |
 | Core Workflow Example | Sequence diagram | [Core Workflows](../flows/core-workflows.md) | Draft |
 | Data Flow Example | Flow chart | [Data Flows](../flows/data-flows.md) | Draft |

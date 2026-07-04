@@ -122,7 +122,7 @@ nav:
       - Progress Tracker: codex/progress-tracker.md
   - DataX Design:
       - Overview: datax/index.md
-      - System Context: datax/system-context.md
+      - Platform: datax/platform.md
       - Architecture:
           - Container Architecture: datax/architecture/container-architecture.md
           - Core Components: datax/architecture/core-components.md
