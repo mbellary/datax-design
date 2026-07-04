@@ -123,6 +123,8 @@ nav:
   - DataX Design:
       - Overview: datax/index.md
       - Platform: datax/platform.md
+      - Repository:
+          - Repository Orientation: datax/repository/repository-orientation.md
       - Architecture:
           - Container Architecture: datax/architecture/container-architecture.md
           - Core Components: datax/architecture/core-components.md

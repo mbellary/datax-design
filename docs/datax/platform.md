@@ -14,7 +14,7 @@ datax is an app-server which allows developers to build rich UI clients to Plan,
 | Codex | TBD | Builds and maintains the platform |
 | External system | TBD | Integrates with codex app-server |
 
-## Product Context
+## Platform Context
 
 ```mermaid
 flowchart LR
@@ -41,6 +41,13 @@ datax owns:
     - Unified Monitoring support of the DE pipeline.
 - App-Server protocol for clients.
 - Firs-class datax client integration with codex app-server
+    - AgentRuntime or CodexRuntimeAdapter interface.
+- Persist DataX domain state separately.
+- Codex events as inputs to DataX projections, not as DataX’s entire model.
+- Owns the data-engineering product; Codex powers the agentic work inside it.
+- Owns the .codex workspace. CLI/Web/Desktop application owns the .datax workspace.
+
+
 
 
 datax integrates with:
@@ -51,6 +58,23 @@ datax integrates with:
 datax does not own:
 
 - Client Interface development and deployment.
+
+datax traps:
+- Do not expose Codex Thread/Turn/Item directly in DataX APIs.
+    
+    That will re-create the coupling you are trying to escape.
+- Do not make Codex history the source of truth for DataX.
+    
+    Codex history is agent interaction history. DataX also needs durable product state: plans, workflows, schedules, deployments, run records, monitors, approvals, artifacts.
+- Do not overfit the first DataX model to Codex UI assumptions.
+    
+    Codex is optimized for software-agent sessions. DataX is a data-engineering control plane with agent support.
+- Do not fork too much Codex code too early.
+    
+    Reuse concepts and crates where practical, but keep a clean boundary so upstream Codex changes do not constantly break DataX.
+- “reuse Codex” means DataX is mostly a thin semantic wrapper around Codex Thread/Turn/Item.
+
+
 
 ## Open Questions
 
