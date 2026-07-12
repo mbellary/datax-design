@@ -2,7 +2,7 @@
 
 ## Purpose
 
-datax is an app-server which allows developers to build rich UI clients to Plan, Build, Deploy, Schedule, Execute and Monitor the Data Engineering tasks. It has a first-class integration with codex app-server.
+datax is an data engineering harness which allows developers to build rich UI clients to Plan, Build, Deploy, Schedule, Execute and Monitor the Data Engineering tasks. It has a first-class integration with codex app-server. The user interacts with Data Engineering Entities like tools, skills, mcp servers exposed using CLI/TUI/Desktop.
 
 
 ## Actors
@@ -29,7 +29,12 @@ datax owns:
 
 - Product Features required for managing the Data Engineering landscape.
     - Planning, Building, Deployment and Monitoring Data Engineering requirements.
-    - Plugins support for Data Engineering Tools.
+    - Add support for Data Engineering Tools.
+    - Add support for DE Skills.
+    - Add support for DE Hooks.
+    - Add suppor for DE Rules.
+    - Add support for DE connectors.
+    - Add support for DE cloud providers.
     - Worktrees to keep parallel task changes isolated with built-in Git worktree support.
     - Git worktree Support.
     - Automations for scheduling recurring tasks , or wakeup the same thread for ongoing checks.
